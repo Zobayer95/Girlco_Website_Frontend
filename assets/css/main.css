@@ -1097,7 +1097,7 @@ a {
 .top-bar {
   padding:0px;
   font-size: 14px;
-  background: #fc23cd;
+  background: #fd87e4;
 }
 .top-bar .cnt-account {
   float: right;
@@ -1196,12 +1196,12 @@ a {
 /* Header
 /*===================================================================================*/
 header{
-    background: #fc23cd;
+    background: #fd87e4;
 }
 
 .main-header {
   padding:25px 0px 30px 0px;
-  background: #fc23cd;
+  background: #dfb6d6;
 }
 .main-header .logo-holder {
   margin-top:5px;
@@ -1290,7 +1290,7 @@ header{
   margin: 0px;
   padding: 19px 25px 19px;
   text-align: center;
-    background-color: #9b2e6e;
+    background-color: #87d8fd;
 
 }
 .main-header .top-search-holder .search-area .search-button:after {
@@ -1364,8 +1364,8 @@ header{
     left: 20px;
     top: 10px;
     width: 18px;
-    background: #9b2e6e;
-    color: #fc23cd;
+    background: #f4f1f5;
+    color: #0c010a;
     font-size: 11px;
     text-align: center;
     line-height: 19px;;
@@ -1684,7 +1684,7 @@ header{
   font-size: 20px;
   font-family:'Barlow', sans-serif;
   padding: 15px 17px;
-  background-color: #9b2e6e;
+  background-color: #fdaddc;
   font-weight:500;
   letter-spacing: 0.2px;
 }
@@ -2843,14 +2843,14 @@ font-family: FontAwesome;
 }
 .product .cart .action ul li.add-cart-button .btn.btn-primary.icon {
   border-radius: 999px;
-  background: #9b2e6e ;
+  background: #FFB6C1 ;
   padding: 10px 14px;
   margin-left:3px;
   margin-right:3px
 }
 .product .cart .action ul li.lnk {
   margin: 10px 0px;
-      background: #fc23cd;
+      background: #FFB6C1;
     margin: 0px;
     padding: 12px 4px;
 	border-radius:999px;
@@ -2863,7 +2863,7 @@ font-family: FontAwesome;
   padding: 8px 10px;
 }
 .product .cart .action ul li.lnk.wishlist {
-	background:#fc23cd;
+	background:#FFB6C1;
 	margin:0px 3px;
 	border-radius:999px
 	
