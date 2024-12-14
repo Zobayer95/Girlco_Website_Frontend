@@ -33,7 +33,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="cnt-home">
-  <div style="width: 80%; margin: auto;">
+  
 
 <!-- ============================================== HEADER ============================================== -->
 <header class="header-style-1"> 
@@ -337,7 +337,7 @@
                         <div class="row">
                           <div class="col-xs-12 col-menu">
                             <ul class="links">
-                              <li><a href="home.html">Home</a></li>
+                              <li><a href="home1.html">Home</a></li>
                               <li><a href="category.html">Category</a></li>
                               <li><a href="detail.html">Detail</a></li>
                               <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
@@ -359,7 +359,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="dropdown  navbar-right special-menu"> <a href="#">Get 30% off on selected items</a> </li>
+                
               </ul>
               <!-- /.navbar-nav -->
               <div class="clearfix"></div>
@@ -380,7 +380,7 @@
   <!-- ============================================== NAVBAR : END ============================================== --> 
   
 </header>
-
+<div style="width: 80%; margin: auto;">
 <!-- ============================================== HEADER : END ============================================== -->
 <div class="body-content outer-top-vs" id="top-banner-and-menu">
   <div class="container">
@@ -718,11 +718,13 @@
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-futbol-o"></i>Festival</a> 
                 <!-- ================================== MEGAMENU VERTICAL ================================== --> 
                 <!-- /.dropdown-menu --> 
-                <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
+                <!-- ================================== MEGAMENU VERTICAL ================================== --> 
+              </li>
               <!-- /.menu-item -->
               
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-envira"></i>Home and Garden</a> 
-                <!-- /.dropdown-menu --> </li>
+                <!-- /.dropdown-menu --> 
+              </li>
               <!-- /.menu-item -->
               
             </ul>
@@ -741,13 +743,14 @@
               <div class="products">
                 <div class="hot-deal-wrapper">
                   <div class="image"> 
-                  <a href="#">
-                  <img src="assets/images/floral.jpg" alt=""> 
-                  <img src="assets/images/flormar.jpg" alt="" class="hover-image">
-                  </a>
+                   <a href="#">
+                    <img src="assets/images/floral.jpg" alt=""> 
+                    <img src="assets/images/flormar.jpg" alt="" class="hover-image">
+                   </a>
                   </div>
                   <div class="sale-offer-tag"><span>49%<br>
-                    off</span></div>
+                    off</span>
+                  </div>
                   <div class="timing-wrapper">
                     <div class="box-wrapper">
                       <div class="date box"> <span class="key">120</span> <span class="value">DAYS</span> </div>
@@ -795,8 +798,9 @@
                   <img src="assets/images/floral.jpg" alt="" class="hover-image">
                   </a>
                    </div>
-                  <div class="sale-offer-tag"><span>35%<br>
-                    off</span></div>
+                  <div class="sale-offer-tag"><span>
+                    35%<br>off
+                  </span></div>
                   <div class="timing-wrapper">
                     <div class="box-wrapper">
                       <div class="date box"> <span class="key">120</span> <span class="value">Days</span> </div>
@@ -844,6 +848,14 @@
                   <img src="assets/images/hot-deals/p15_hover.jpg" alt="" class="hover-image">
                   </a>
                    </div>
+                   <div>
+                    <div class="hot-deal-timer timer">
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper"> 
+                        </div>
+                      </div>
+                    </div>
+                   </div>
                   <div class="sale-offer-tag"><span>35%<br>
                     off</span></div>
                   <div class="timing-wrapper">
@@ -865,8 +877,8 @@
                 <div class="product-info text-left m-t-20">
                   <h3 class="name"><a href="detail.html">Herbalika pad</a></h3>
                   <div class="rating rateit-small"></div>
-                  <div class="product-price"> <span class="price"> ৳600.00 </span> <span class="price-before-discount">৳800.00</span> </div>
-                  <!-- /.product-price -->                  
+                     <!-- /.product-price -->
+                  <div class="product-price"> <span class="price"> ৳600.00 </span> <span class="price-before-discount">৳800.00</span> </div>               
                 </div>
                 <!-- /.product-info -->                
                 <div class="cart clearfix animate-effect">
@@ -943,6 +955,11 @@
                       <!-- /.product-micro-row --> 
                     </div>
                     <!-- /.product-micro -->                    
+                  </div>
+                  <div>
+                    <p>
+                      
+                    </p>
                   </div>
                   <div class="product">
                     <div class="product-micro">
@@ -1504,7 +1521,7 @@
           </div>
           <!-- /.owl-carousel --> 
         </div>
-        
+         
         <!-- ========================================= SECTION – HERO : END ========================================= --> 
         
         <!-- ============================================== SCROLL TABS ============================================== -->
@@ -1551,11 +1568,11 @@
                           <div class="action">
                             <ul class="list-unstyled">
                               <li class="add-cart-button btn-group">
-                                <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
+                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action --> 
@@ -2144,7 +2161,6 @@
                              <img src="assets/images/flormarr.jpg" alt=""> 
                               <img src="assets/images/floral.jpg" alt="" class="hover-image">
                           </a>
-                          
                           </div>
                           <!-- /.image -->
                           
@@ -2159,7 +2175,27 @@
                           <div class="product-price"> <span class="price"> ৳450.99 </span> <span class="price-before-discount">৳ 800</span> </div>
                           <!-- /.product-price -->                           
                         </div>
-
+                      <div>
+                        <div>
+                          <div class="product-info-cart">
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button class="dropdown" type="button"> <i class="fa fa-shopping-cart"></i>
+                                      <span> Add to Cart </span>
+                                      </button>
+                                      </li>
+                                      <li class="lnk wishlist"> <a class="add-to-cart" href="detail">
+                                        <i class="icon fa fa-heart"></i> </a> </li>
+                                      </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
                           <div class="action">
@@ -3931,7 +3967,6 @@
                                <img src="assets/images/flormarr.jpg" alt=""> 
                                 <img src="assets/images/floral.jpg" alt="" class="hover-image">
                             </a>
-                            
                             </div>
                       <!-- /.image -->
                       
@@ -4898,8 +4933,40 @@
     </div>
   </div>
 </footer>
+<div class="nav-bar">
+  <!-- Home Icon -->
+  <a href="#" class="nav-item home-icon">
+    <img src="https://img.icons8.com/ios-filled/50/ff007a/home.png" alt="Home Icon">
+  </a>
+
+  <!-- Hamburger Menu -->
+  <a href="#" class="nav-item">
+    <img src="https://img.icons8.com/ios-filled/50/ff007a/menu.png" alt="Menu Icon">
+  </a>
+
+  <div class="spacer"></div>
+
+  <!-- Cart Section -->
+  <a href="#" class="nav-item">
+    <img src="https://img.icons8.com/ios-filled/50/ff007a/shopping-cart.png" alt="Cart Icon">
+    <span>Cart (0)</span>
+  </a>
+
+  <!-- Notifications Section -->
+  <a href="#" class="nav-item">
+    <img src="https://img.icons8.com/ios-filled/50/ff007a/appointment-reminders.png" alt="Notifications Icon">
+    <span>Notifications</span>
+  </a>
+
+  <!-- Account Section -->
+  <a href="#" class="nav-item">
+    <img src="https://img.icons8.com/ios-filled/50/ff007a/user-male.png" alt="Account Icon">
+    <span>Account</span>
+  </a>
+</div>
 <!-- ============================================================= FOOTER : END============================================================= --> 
 </div>
+
 <!-- For demo purposes – can be removed on production --> 
 
 <!-- For demo purposes – can be removed on production : End --> 
