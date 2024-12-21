@@ -1592,7 +1592,7 @@ header {
 
 .main-header .top-search-holder .search-area .search-button:after {
   color: #333;
-  content: "search";
+  content: "\f109";
   font-family: fontawesome;
   font-size: 18px;
   line-height: 9px;
@@ -2501,7 +2501,7 @@ header {
 }
 
 #owl-main .owl-outer-nav:after {
-  content: "";
+  content: "\f105";
   position: absolute;
   top: 0;
   left: -15%;
@@ -5978,7 +5978,7 @@ header {
   color: #666666;
   font-size: 13px;
   padding-right: 4px;
-  ont-family: FontAwesome;
+  font-family: FontAwesome;
 }
 
 .blog-page .blog-post .author:before,
