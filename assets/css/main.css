@@ -2501,7 +2501,7 @@ header {
 }
 
 #owl-main .owl-outer-nav:after {
-  content: "\f105";
+  content: "";
   position: absolute;
   top: 0;
   left: -15%;
@@ -6088,7 +6088,7 @@ header {
 }
 
 .checkout-box .checkout-steps .panel .panel-heading .unicase-checkout-title a span {
-  background-color: #333;
+  background-color: #aaaaaa;
   color: #fff !important;
   display: inline-block;
   margin-right: 10px;
