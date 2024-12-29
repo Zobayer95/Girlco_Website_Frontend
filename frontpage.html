@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIRLCO Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            height: 30px;
+        }
+        .icons {
+            display: flex;
+            gap: 15px;
+            font-size: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .search-bar input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+        }
+        .categories {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px;
+        }
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+        }
+        .category img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+        .advertisement {
+            margin: 10px;
+            padding: 15px;
+            background-color: #f5f9ff;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .advertisement img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .brands {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .brands img {
+            width: 50px;
+            height: 50px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer div {
+            text-align: center;
+        }
+        footer i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="logo.png" alt="GIRLCO">
+        </div>
+        <div class="icons">
+            <span>&#128276;</span>
+            <span>&#128722;</span>
+            <span>&#10084;</span>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for Body & Skin">
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category">
+            <img src="facecare.jpg" alt="Face Care">
+            <span>Face Care</span>
+        </div>
+        <div class="category">
+            <img src="eyecare.jpg" alt="Eye Care">
+            <span>Eye Care</span>
+        </div>
+        <div class="category">
+            <img src="lipcare.jpg" alt="Lip Care">
+            <span>Lip Care</span>
+        </div>
+        <div class="category">
+            <img src="nailcare.jpg" alt="Nail Care">
+            <span>Nail Care</span>
+        </div>
+        <div class="category">
+            <img src="makeup.jpg" alt="Makeup Remover">
+            <span>Makeup Remover</span>
+        </div>
+    </div>
+
+    <!-- Advertisement -->
+    <div class="advertisement">
+        <h3>শীতের সুরক্ষা ও আরামে</h3>
+        <p>BUY ONE GET ONE FREE - Up to 300 TK OFF</p>
+        <img src="baby-product.jpg" alt="Twinkle Baby Products">
+    </div>
+
+    <!-- Brands -->
+    <div class="brands">
+        <img src="herbalika.png" alt="Herbalika">
+        <img src="unilever.png" alt="Unilever">
+        <img src="parachute.png" alt="Parachute">
+        <img src="pharma.png" alt="Pharma">
+    </div>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <div>
+            <i>&#127968;</i>
+            <p>Home</p>
+        </div>
+        <div>
+            <i>&#128717;</i>
+            <p>Categories</p>
+        </div>
+        <div>
+            <i>&#128205;</i>
+            <p>Location</p>
+        </div>
+        <div>
+            <i>&#128197;</i>
+            <p>Orders</p>
+        </div>
+        <div>
+            <i>&#128100;</i>
+            <p>Account</p>
+        </div>
+    </footer>
+</body>
+</html>
