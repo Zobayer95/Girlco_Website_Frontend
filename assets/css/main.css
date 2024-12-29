@@ -335,7 +335,7 @@ img[src="assets/images/blank.gif"] {
   padding-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .inner {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -9128,4 +9128,50 @@ body {
 
 .home-banner img {
   border-radius: 5px
+}
+/*Circle*/
+.circle {
+  width: 100px;         /* Width of the circle */
+  height: 100px;        /* Height of the circle */
+  background-color: #3498db; /* Circle color */
+  color: white;         /* Text color */
+  display: flex;        /* Enables flexbox for centering */
+  justify-content: center; /* Centers text horizontally */
+  align-items: center;  /* Centers text vertically */
+  border-radius: 50%;   /* Makes the shape circular */
+  font-size: 16px;      /* Adjusts text size */
+  font-weight: bold;    /* Makes text bold */
+  text-align: center;   /* Aligns text within the circle */
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.gap-2 {
+  gap: 1.5rem;
+}
+.col-md-1 a {
+  width: 100px; /* Ensures uniform button size */
+  text-align: center;
+  padding: 10px;
+}
+.mt-4 {
+  margin-top: 1.5rem;
+}
+@media (max-width: 800px) {
+  .element-to-hide {
+    display: none;
+  }
+}
+
+/* Show element on medium screens (600px to 900px) */
+@media (min-width: 800px) and (max-width: 900px) {
+  .element-to-hide {
+    display: block;
+  }
 }
