@@ -9201,3 +9201,44 @@ body {
   margin: 10px 0;
   font-size: 1.2rem;
 }
+.category-module {
+  display: none;
+}
+
+/* Show the category module on smaller screens (responsive view) */
+@media (max-width: 768px) {
+  .category-module {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .category-module ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .category-module li {
+    margin: 5px 0;
+  }
+
+  .category-module a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+}
+.responsive-hide {
+  display: block;
+}
+
+/* Hide element for screens smaller than 768px */
+@media (max-width: 768px) {
+  .responsive-hide {
+    display: none;
+  }
+}
