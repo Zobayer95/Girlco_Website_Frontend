@@ -6510,7 +6510,7 @@ header {
 }
 
 .checkout-btn {
-  background: #9b2e6e;
+  background: #0066cc;
   color: #333;
   padding: 12px 25px;
   font-size: 20px
@@ -9242,3 +9242,4 @@ body {
     display: none;
   }
 }
+
