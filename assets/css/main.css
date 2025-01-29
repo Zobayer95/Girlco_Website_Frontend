@@ -3537,7 +3537,6 @@ header {
   color: #333
 }
 
-
 .sidebar {
   width: 290px;
 }
@@ -3677,16 +3676,16 @@ header {
 
 .cnt-strip .strip h2 {
   font-size: 36px;
-  color: #fff;
+  color: #333;
   margin: 0;
   text-transform: uppercase;
   font-family: 'Barlow', sans-serif;
-  font-weight: 600
+  font-weight: 100
 }
 
 .cnt-strip .strip h2 .shopping-needs {
   font-family: 'Barlow', sans-serif;
-  color: #fff;
+  color: #333;
   font-weight: 400;
   font-size: 22px;
   text-transform: none
@@ -3770,7 +3769,7 @@ header {
 }
 
 .wide-banners.homepage-banner h4 {
-  font-size: 30px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -3832,7 +3831,7 @@ header {
 }
 
 .wide-banner-4 .cnt-strip .strip h1 {
-  font-size: 50px;
+  font-size: 10px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -8808,7 +8807,7 @@ header {
   }
 
   .home-banner img {
-    width: 100%
+    width: 50%
   }
 
   .sidebar .side-menu nav .nav>li>.mega-menu .yamm-content ul>li {
@@ -9121,11 +9120,11 @@ body {
 /*===================================================================================*/
 
 .home-banner {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .home-banner img {
-  border-radius: 5px
+  border-radius: 2px
 }
 /*Circle*/
 .circle {
