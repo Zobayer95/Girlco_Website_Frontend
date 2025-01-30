@@ -45,9 +45,10 @@
        
         </div>
     </marquee>
-</div>
+  </div>
   
   <!-- ============================================== TOP MENU ============================================== -->
+ 
   <div class="top-bar animate-dropdown">
     <div class="container">
       <div class="category-module">
@@ -790,6 +791,35 @@
 <!-- For demo purposes – can be removed on production : End --> 
 
 <!-- JavaScripts placed at the end of the document so the pages load faster --> 
+<script>
+  const drawerToggle = document.querySelector('.drawer-toggle');
+  const drawer = document.querySelector('.drawer');
+  const drawerClose = document.querySelector('.drawer-close');
+  const overlay = document.querySelector('.drawer-overlay');
+
+  drawerToggle.addEventListener('click', () => {
+      drawer.classList.add('active');
+      overlay.style.display = 'block';
+  });
+
+  drawerClose.addEventListener('click', () => {
+      drawer.classList.remove('active');
+      overlay.style.display = 'none';
+  });
+
+  overlay.addEventListener('click', () => {
+      drawer.classList.remove('active');
+      overlay.style.display = 'none';
+  });
+
+  // Close drawer on ESC key
+  document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+          drawer.classList.remove('active');
+          overlay.style.display = 'none';
+      }
+  });
+  </script>
 <script src="assets/js/jquery-1.11.1.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
