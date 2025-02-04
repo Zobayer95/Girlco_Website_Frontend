@@ -1680,7 +1680,7 @@ header {
   font-size: 11px;
   text-align: center;
   line-height: 19px;
-  ;
+  
 }
 
 .top-cart-row .dropdown-cart .dropdown-menu {
@@ -3765,7 +3765,7 @@ header {
 }
 
 .wide-banners.homepage-banner {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .wide-banners.homepage-banner h4 {
@@ -3774,7 +3774,7 @@ header {
 }
 
 .wide-banners.homepage-banner h3 {
-  font-size: 35px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -7155,7 +7155,7 @@ header {
   }
 
   .wide-banner1 {
-    margin-bottom: 20px
+    margin-bottom: 30px
   }
 
   .wide-banner .image img {
