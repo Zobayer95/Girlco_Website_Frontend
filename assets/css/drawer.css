@@ -1,0 +1,180 @@
+.drawer-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    padding: 12px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.drawer-toggle:hover {
+    color: #F73D93;
+}
+
+.drawer {
+    position: fixed;
+    left: -320px;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background: linear-gradient(135deg, #F73D93 0%, #ff65b3 100%);
+    box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) transparent;
+}
+
+.drawer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.drawer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.drawer::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3px;
+}
+
+.drawer.active {
+    left: 0;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+}
+
+.drawer-header {
+    padding: 25px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawer-header h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.drawer-close:hover {
+    opacity: 1;
+}
+
+.drawer-menu {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.drawer-menu li {
+    margin: 2px 0;
+}
+
+.drawer-menu li a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.drawer-menu li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #fff;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.drawer-menu li a:hover {
+    background: rgba(255,255,255,0.1);
+    padding-left: 30px;
+}
+
+.drawer-menu li a:hover:before {
+    transform: scaleY(1);
+}
+
+.drawer-menu .dropdown-menu {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.drawer-menu .dropdown-menu a {
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+}
+
+.drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .drawer-toggle {
+        display: block;
+    }
+    .nav-outer {
+        display: none;
+    }
+    .drawer {
+        width: 280px;
+        left: -280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .drawer {
+        width: 260px;
+        left: -260px;
+    }
+    .drawer-menu li a {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
