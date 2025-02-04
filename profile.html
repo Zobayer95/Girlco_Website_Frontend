@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .profile-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .profile-header {
+      text-align: center;
+    }
+
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .profile-header input[type="file"] {
+      display: none;
+    }
+
+    .profile-info {
+      margin-top: 20px;
+    }
+
+    .profile-info p {
+      margin: 8px 0;
+    }
+
+    button {
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .edit-form {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .edit-form input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .order-history {
+      margin-top: 30px;
+    }
+
+    .order-item {
+      background-color: #333;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="profile-header">
+    <img id="profile-pic" src="default-avatar.png" alt="Profile Picture" onclick="triggerFileInput()">
+    <input type="file" id="upload-pic" accept="image/*" onchange="updateProfilePic(event)">
+    <h2 id="user-name">Jane Doe</h2>
+    <p id="user-email">janedoe@example.com</p>
+    <p id="user-address">123 Market Street, Cityville</p>
+    <button onclick="toggleEditForm()">Edit Profile</button>
+  </div>
+
+  <div class="edit-form" id="edit-form">
+    <input type="text" id="edit-name" placeholder="Name">
+    <input type="email" id="edit-email" placeholder="Email">
+    <input type="text" id="edit-address" placeholder="Shipping Address">
+    <button onclick="saveProfile()">Save</button>
+    <button onclick="cancelEdit()">Cancel</button>
+  </div>
+
+  <div class="order-history">
+    <h3>Order History</h3>
+    <div class="order-item">
+      <p><strong>Order #001:</strong> Stylish Shoes</p>
+      <p>Status: Delivered</p>
+      <p>Date: 2024-12-01</p>
+    </div>
+    <div class="order-item">
+      <p><strong>Order #002:</strong> Elegant Watch</p>
+      <p>Status: Shipped</p>
+      <p>Date: 2024-12-10</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Load profile data on page load
+  window.onload = function () {
+    const savedName = localStorage.getItem('userName') || 'Jane Doe';
+    const savedEmail = localStorage.getItem('userEmail') || 'janedoe@example.com';
+    const savedAddress = localStorage.getItem('userAddress') || '123 Market Street, Cityville';
+    const savedPic = localStorage.getItem('userPic') || 'default-avatar.png';
+
+    document.getElementById('user-name').textContent = savedName;
+    document.getElementById('user-email').textContent = savedEmail;
+    document.getElementById('user-address').textContent = savedAddress;
+    document.getElementById('profile-pic').src = savedPic;
+  };
+
+  function toggleEditForm() {
+    const form = document.getElementById('edit-form');
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function saveProfile() {
+    const newName = document.getElementById('edit-name').value;
+    const newEmail = document.getElementById('edit-email').value;
+    const newAddress = document.getElementById('edit-address').value;
+
+    if (newName) {
+      document.getElementById('user-name').textContent = newName;
+      localStorage.setItem('userName', newName);
+    }
+    if (newEmail) {
+      document.getElementById('user-email').textContent = newEmail;
+      localStorage.setItem('userEmail', newEmail);
+    }
+    if (newAddress) {
+      document.getElementById('user-address').textContent = newAddress;
+      localStorage.setItem('userAddress', newAddress);
+    }
+
+    toggleEditForm();
+  }
+
+  function cancelEdit() {
+    toggleEditForm();
+  }
+
+  function triggerFileInput() {
+    document.getElementById('upload-pic').click();
+  }
+
+  function updateProfilePic(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const newPic = e.target.result;
+        document.getElementById('profile-pic').src = newPic;
+        localStorage.setItem('userPic', newPic);
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+</script>
+
+</body>
+</html>

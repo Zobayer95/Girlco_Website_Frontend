@@ -51,8 +51,9 @@ a {
 .main-header .top-search-holder .search-area .categories-filter .dropdown-menu li a:focus {
   color: #0f6cb2;
 }
+
 .header-style-1 .header-nav {
-  background: #157ed2;
+  background: #F73D93;
   border-top: 1px solid hsla(0,0%,100%,.2);
   border-radius: 0px 0px 0px 200px;
 }
@@ -138,7 +139,7 @@ a {
   background: #0f6cb2;
 }
 .tag.sale {
-  background: #fdd922;
+  background: #f3f1f2;
   color:#333
 }
 .copyright-bar .copyright a {
@@ -280,7 +281,7 @@ a {
 .cart .action .add-cart-button .btn.btn-primary.icon:hover,
 .cart .action .add-cart-button .btn.btn-primary.icon:focus {
   background: #0f6cb2;
-  color:#fff
+  color:#fff;
 }
 .product-tabs .tab-content .tab-pane .product-reviews .reviews .review .review-title .date span {
   color: #0f6cb2;
@@ -380,11 +381,11 @@ a {
   color: #0f6cb2;
 }
 .checkout-box .checkout-steps .panel .panel-heading .unicase-checkout-title > a:not(.collapsed) span {
-  background-color: #0f6cb2;
+  background-color: #333;
 }
 .checkout-box .checkout-steps .checkout-step-01 .already-registered-login a:hover,
 .checkout-box .checkout-steps .checkout-step-01 .already-registered-login a:focus {
-  color: #0f6cb2;
+  color: #333;
 }
 .checkout-box .checkout-progress-sidebar .panel-body ul li a:hover,
 .checkout-box .checkout-progress-sidebar .panel-body ul li a:focus {
@@ -443,7 +444,7 @@ a {
 }
 .mega-menu .dropdown-menu {
 width:100%;
-left:0px 
+left:0px
 }
 
 .navbar-nav>li>.dropdown-menu { box-shadow:0px 10px 20px 0px rgba(0,0,0,.1);}
