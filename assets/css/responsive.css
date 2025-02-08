@@ -1,0 +1,178 @@
+/* Responsive Styles */
+
+/* General Responsive Utilities */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.header-style-1 {
+    position: relative;
+}
+
+.top-bar {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.main-header {
+    padding: 20px 0;
+}
+
+.search-area {
+    margin: 15px 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-link {
+    padding: 15px;
+}
+
+/* Responsive Breakpoints */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .top-bar .cnt-account {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .search-area {
+        margin: 10px 0;
+    }
+    
+    .cart-area {
+        justify-content: center !important;
+        margin-top: 15px;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+    
+    .mega-menu {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .mega-menu .row > div {
+        margin-bottom: 15px;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .nav-link {
+        padding: 15px 10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .mega-menu {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Component Specific Styles */
+
+/* Search Bar */
+.search-area .input-group {
+    width: 100%;
+}
+
+/* Shopping Cart */
+.shopping-cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #f8694a;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Mega Menu */
+.mega-menu {
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.mega-menu h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mega-menu ul li a {
+    color: #666;
+    padding: 5px 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.mega-menu ul li a:hover {
+    color: #f8694a;
+    text-decoration: none;
+    padding-left: 5px;
+}
