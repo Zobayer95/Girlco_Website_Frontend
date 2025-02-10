@@ -38,18 +38,34 @@
             min-height: 100vh;
             flex-direction: column;
             background: #f4f4f4;
+            overflow-x: hidden;
         }
         .sidebar {
             width: 250px;
             background: linear-gradient(45deg, #ff69b4, palevioletred);
             color: white;
-            height: 100%;
+            height: 75%;
             padding: 20px;
             box-sizing: border-box;
             position: fixed;
             left: 0;
             top: 0;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        .sidebar-toggle {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1001;
+            background: palevioletred;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         .sidebar h2 {
             text-align: center;
@@ -87,6 +103,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            transition: margin-left 0.3s ease;
         }
         .dashboard-header {
             background: white;
@@ -230,8 +247,44 @@
             font-size: 18px;
         }
         @media (max-width: 768px) {
-            .charts-grid {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            .sidebar.active {
+                transform: translateX(0);
+            }
+            .sidebar-toggle {
+                display: block;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 15px;
+            }
+            section {
                 grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 15px;
+            }
+            .dashboard-header {
+                padding: 15px;
+            }
+            .dashboard-header h1 {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .card p {
+                font-size: 24px;
+            }
+            .stat-item {
+                padding: 10px;
+            }
+            .stat-item p {
+                font-size: 18px;
             }
         }
     </style>
@@ -302,6 +355,7 @@
     </script>
 </head>
 <body>
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
     <div class="sidebar">
         <h2>Admin Panel</h2>
         <ul>
@@ -412,6 +466,11 @@
     <script src="assets/js/bootstrap-select.min.js"></script> 
     <script src="assets/js/wow.min.js"></script> 
     <script src="assets/js/scripts.js"></script>
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
