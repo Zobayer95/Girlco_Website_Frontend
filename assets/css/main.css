@@ -9322,3 +9322,71 @@ body {
       display: none;
   }
 }
+
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  max-width: 90%;
+  z-index: 1000;
+}
+.chat-box {
+  display: none;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+.chat-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.chat-messages {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+.chat-input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+}
+.chat-button {
+  background: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+.send-button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
