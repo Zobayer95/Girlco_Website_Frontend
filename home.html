@@ -971,7 +971,49 @@
         
         <!-- /.side-menu --> 
         <!-- ================================== TOP NAVIGATION : END ================================== --> 
-        
+        <div class="chat-container">
+          <div class="chat-box" id="chatBox">
+              <div class="chat-header">Chat with Us</div>
+              <div id="nameField">
+                  <input type="text" class="chat-input" id="userName" placeholder="Enter your name...">
+                  <button onclick="startChat()">Start</button>
+              </div>
+              <div id="chatConversation" style="display: none;">
+                  <div class="chat-messages" id="chatMessages"></div>
+                  <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." onkeypress="sendMessage(event)">
+              </div>
+          </div>
+          <button class="chat-button" onclick="toggleChat()">💬 Chat</button>
+      </div>
+      
+      <script>
+          function toggleChat() {
+              var chatBox = document.getElementById("chatBox");
+              chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
+          }
+          
+          function startChat() {
+              var userName = document.getElementById("userName").value;
+              if (userName.trim() !== "") {
+                  document.getElementById("nameField").style.display = "none";
+                  document.getElementById("chatConversation").style.display = "block";
+                  document.getElementById("chatMessages").innerHTML = "<p>Welcome, " + userName + "! How can we help you?</p>";
+              }
+          }
+          
+          function sendMessage(event) {
+              if (event.key === "Enter") {
+                  var chatInput = document.getElementById("chatInput");
+                  var message = chatInput.value.trim();
+                  if (message !== "") {
+                      var chatMessages = document.getElementById("chatMessages");
+                      chatMessages.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
+                      chatInput.value = "";
+                      chatMessages.scrollTop = chatMessages.scrollHeight;
+                  }
+              }
+          }
+      </script>
         <!-- ============================================== HOT DEALS ============================================== -->
         <div class="sidebar-widget hot-deals outer-bottom-xs">
           <h3 class="section-title">Hot deals</h3>
