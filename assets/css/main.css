@@ -3707,7 +3707,7 @@ header {
 }
 
 .cnt-strip .strip.strip-text {
-  width: 60%;
+  width: 50%;
 }
 
 .cnt-strip .strip .red {
@@ -3733,11 +3733,11 @@ header {
 
 .cnt-strip .new-label {
   background: url("../images/label.png") no-repeat scroll right top;
-  height: 72px;
+  height: 50px;
   position: absolute;
   left: -1px;
   top: -1px;
-  width: 72px;
+  width: 50px;
   z-index: 999;
 }
 
@@ -3757,7 +3757,7 @@ header {
   -webkit-transform: rotate(-43deg);
   /* Chrome, Safari, Opera */
   transform: rotate(-43deg);
-  width: 100%;
+  width: 50%;
 }
 
 .wide-banners {
