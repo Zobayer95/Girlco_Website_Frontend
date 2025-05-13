@@ -57,7 +57,17 @@
            <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> 
            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
-                        <button class="drawer-toggle"><i class="fa fa-bars"></i></button>
+                        <but.sr-only {
+                            position: absolute;
+                            width: 1px;
+                            height: 1px;
+                            padding: 0;
+                            margin: -1px;
+                            overflow: hidden;
+                            clip: rect(0, 0, 0, 0);
+                            white-space: nowrap;
+                            border: 0;
+                        }ton class="drawer-toggle" aria-label="Toggle navigation menu"><i class="fa fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></button>
           <div class="drawer">
               <div class="drawer-header">
                   <h3>Menu</h3>
@@ -616,7 +626,7 @@
             <button class="send-button" onclick="manualSendMessage()">Send</button>
         </div>
     </div>
-    <button class="chat-button" onclick="toggleChat()">💬 Chat</button>
+    <button class="chat-button" onclick="toggleChat()"> Chat</button>
 </div>
 <script>
     function toggleChat() {
