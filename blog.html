@@ -617,13 +617,11 @@
     </div>
     <button class="chat-button" onclick="toggleChat()">💬 Chat</button>
 </div>
-
 <script>
     function toggleChat() {
         var chatBox = document.getElementById("chatBox");
         chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
     }
-    
     function startChat() {
         var userName = document.getElementById("userName").value.trim();
         if (userName !== "") {
