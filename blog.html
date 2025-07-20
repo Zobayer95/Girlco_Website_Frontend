@@ -647,12 +647,14 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
             setTimeout(() => botReply("Thank you for your message! A representative will respond shortly."), 2000);
         }
+
     }
     function botReply(reply) {
         var chatMessages = document.getElementById("chatMessages");
         chatMessages.innerHTML += "<p><strong>Support:</strong> " + reply + "</p>";
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
+
 </script>
 </header>
 <!-- ============================================== HEADER : END ============================================== -->
@@ -666,7 +668,6 @@
 		</div> <!-- /.breadcrumb-inner -->
 	</div>   <!-- /.container --------->
 </div>     <!-- /.breadcrumb -------->
-
 <div class="body-content">
 	<div class="container">
 		<div class="row">
