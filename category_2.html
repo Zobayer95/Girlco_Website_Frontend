@@ -606,7 +606,7 @@
     <div class="chat-box" id="chatBox">
         <div class="chat-header">Chat with Us</div>
         <div id="nameField">
-            <input type="text" class="chat-input" id="userName" placeholder="Enter your name...">
+            <input type="text" class="chat-input" id="userName" placeholder="Enter your name........">
             <button class="send-button" onclick="startChat()">Start Chat</button>
         </div>
         <div id="chatConversation" style="display: none;">
@@ -623,7 +623,6 @@
         var chatBox = document.getElementById("chatBox");
         chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
     }
-    
     function startChat() {
         var userName = document.getElementById("userName").value.trim();
         if (userName !== "") {
